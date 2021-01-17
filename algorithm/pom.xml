@@ -2,23 +2,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>my-action</artifactId>
+        <groupId>pers.bo.zhao.action</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>pers.bo.zhao.action</groupId>
-    <artifactId>my-action</artifactId>
+    <artifactId>algorithm</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>jvm</module>
-        <module>hashedwheeltimer</module>
-        <module>netty</module>
-        <module>charpter3</module>
-        <module>pers.bo.zhao.action.mnia.chapter3</module>
-        <module>chapter13</module>
-        <module>pers.bo.zhao.action.zookeeper</module>
-        <module>algorithm</module>
-        <module>book_java8_in_action</module>
-        <module>proxy</module>
+        <module>algorithm_4</module>
     </modules>
 
     <properties>
