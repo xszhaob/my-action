@@ -1,7 +1,7 @@
 package java8.chapter06;
 
-import bo.zhao.practice.java8.BaseAction;
-import bo.zhao.practice.java8.chapter05.Dish;
+import java8.BaseAction;
+import java8.chapter05.Dish;
 import org.junit.Test;
 
 import java.util.Comparator;

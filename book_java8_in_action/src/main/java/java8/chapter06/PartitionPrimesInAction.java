@@ -1,6 +1,6 @@
 package java8.chapter06;
 
-import bo.zhao.practice.java8.BaseAction;
+import java8.BaseAction;
 import org.junit.Test;
 
 import java.util.List;

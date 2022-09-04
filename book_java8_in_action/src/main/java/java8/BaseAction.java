@@ -1,6 +1,6 @@
 package java8;
 
-import bo.zhao.practice.java8.chapter05.Dish;
+import java8.chapter05.Dish;
 
 import java.util.ArrayList;
 import java.util.List;

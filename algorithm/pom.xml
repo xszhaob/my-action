@@ -11,13 +11,18 @@
 
     <artifactId>algorithm</artifactId>
     <packaging>pom</packaging>
-    <modules>
-        <module>algorithm_4</module>
-    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+        </dependency>
+    </dependencies>
 
 </project>
