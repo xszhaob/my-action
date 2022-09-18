@@ -75,4 +75,35 @@ public class _22GenerateParenthesis {
             getParenthesis(result, sb.append(")"), left, right - 1);
         }
     }
+
+    /**
+     * 回溯版本
+     */
+    public List<String> generateParenthesis_backtrack(int n) {
+        if (n == 0) {
+            return new ArrayList<>(0);
+        }
+        List<String> result = new ArrayList<>();
+        backtrack(0, 0, new StringBuilder(), result, n);
+        return result;
+    }
+
+
+    private void backtrack(int l, int r, StringBuilder sb, List<String> result, int n) {
+        if (sb.length() == n * 2) {
+            result.add(sb.toString());
+            return;
+        }
+
+        if (l < n) {
+            sb.append("(");
+            backtrack(l + 1, r, sb, result, n);
+            sb.deleteCharAt(sb.length() - 1);
+        }
+        if (r < l) {
+            sb.append(")");
+            backtrack(l, r + 1, sb, result, n);
+            sb.deleteCharAt(sb.length() - 1);
+        }
+    }
 }
