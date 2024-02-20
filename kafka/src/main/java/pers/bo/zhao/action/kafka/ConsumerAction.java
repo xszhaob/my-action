@@ -36,7 +36,7 @@ public class ConsumerAction {
                     list.add(ProducerAction.TOPIC);
                     consumer.subscribe(list);
                     while (!closed) {
-                        ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(10000));
+                        ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(1000000));
                         // Handle new records
                         for (ConsumerRecord<String, String> record : records) {
                             System.out.println("consumer: topic = " + record.topic() + ", value = " + record.value());

@@ -23,7 +23,7 @@ public class ProducerAction {
         props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         KafkaProducer<String, String> kafkaProducer = new KafkaProducer<>(props);
 
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 10; i++) {
             Future<RecordMetadata> send = kafkaProducer.send(new ProducerRecord<>(TOPIC, TOPIC + "test produce " + i));
             try {
                 RecordMetadata recordMetadata = send.get();
